@@ -1,0 +1,18 @@
+@use "../../Foundation/variable" as *;
+
+.c-layer {
+    &--sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(0, 0, 0, 0.5);
+        z-index: 5;
+        display: none;
+
+        &.is-open {
+            display: inherit;
+        }
+    }
+}

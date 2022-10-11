@@ -1,0 +1,13 @@
+@use "../../Foundation/variable";
+
+.c-logo{
+
+    &--header{
+        width: 120px;
+
+        img {
+            width: 100%;
+        }
+
+    }
+}

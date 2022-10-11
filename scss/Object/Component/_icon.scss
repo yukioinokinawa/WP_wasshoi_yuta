@@ -1,0 +1,7 @@
+@use "../../Foundation/variable" as *;
+
+.c-icon {
+    &--arrow {
+        color: $navy;
+    }
+}

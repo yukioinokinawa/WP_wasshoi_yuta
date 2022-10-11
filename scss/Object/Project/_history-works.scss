@@ -1,0 +1,15 @@
+@use "../../Foundation/variable" as *;
+
+.p-history-works{
+    margin: 40px auto;  
+    h1{
+        max-width: 163px;
+        margin: 0 auto 43px;
+        line-height: 1;
+        text-align: center;
+
+        @include breakpoint(tablet){
+            max-width: none;
+        }
+    }
+}

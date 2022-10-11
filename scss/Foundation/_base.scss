@@ -1,0 +1,43 @@
+@charset "UFT-8";
+
+html {
+    font-size: 62.5%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: calc(100vw - 17px);
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+
+    &.is-open {
+        position: fixed;
+    }
+}
+
+img {
+    vertical-align: bottom;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+h3,
+h4,
+h5,
+h6 {
+    color: #222222;
+}
+
+p {
+    font-size: 16px;
+}

@@ -1,0 +1,81 @@
+@use "../../Foundation/variable" as *;
+
+.c-panel {
+
+    &--main {
+        text-align: center;
+
+        //コンタクトページの見出し用パネル
+
+        &__mobile {
+            display: inline-block;
+            margin: 50px 0;
+            text-align: center;
+            width: 329px;
+            height: 100%;
+            border: 2px solid $navy;
+            border-radius: 15px;
+            box-shadow: 5px 10px $yellow;
+
+            >p {
+                font-size: 32px;
+                font-weight: bold;
+                color: $navy;
+                margin: 20px 0;
+            }
+
+        }
+
+        &__pc {
+            display: none;
+
+        }
+
+        @include breakpoint(tablet) {
+
+            &__pc {
+                display: inline-block;
+                margin: 50px 0;
+                text-align: center;
+                width: 438px;
+                height: 100%;
+                border: 2px solid $navy;
+                border-radius: 15px;
+                box-shadow: 5px 10px $yellow;
+
+                >p {
+                    font-size: 32px;
+                    font-weight: bold;
+                    color: $navy;
+                    margin: 20px 0;
+                }
+
+            }
+
+            &__mobile {
+                display: none;
+            }
+        }
+
+    }
+
+    &--sub {
+        //プライバシーポリシーのパネル
+        display: inline-block;
+        margin: 50px 50px;
+        text-align: center;
+        min-width: 330px;
+        height: 100%;
+        border: 1px solid $yellow;
+        border-radius: 15px;
+
+        h3 {
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        p {
+            margin: 20px 30px;
+        }
+    }
+}

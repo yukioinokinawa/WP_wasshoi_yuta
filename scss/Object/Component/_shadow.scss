@@ -1,0 +1,6 @@
+@use "../../Foundation/variable" as *;
+
+.c-shadow {
+    box-shadow: 7px 5px 0px $yellow;
+
+}

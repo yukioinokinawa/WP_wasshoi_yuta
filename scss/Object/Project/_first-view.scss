@@ -1,0 +1,19 @@
+@use "../../Foundation/variable" as *;
+
+.p-first-view {
+    width: 100vw;
+    >img {
+
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+
+    }
+
+    @include breakpoint(pc){
+        img{
+            height: 800px;
+        }
+    }
+
+}

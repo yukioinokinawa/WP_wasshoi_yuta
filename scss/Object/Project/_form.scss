@@ -1,0 +1,15 @@
+@use "../../Foundation/variable" as *;
+
+.p-form {
+    //コンタクトフォームの管理
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Noto Sans JP";
+
+    span{
+        color: #BD0020;
+    }
+}

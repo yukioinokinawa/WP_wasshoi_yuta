@@ -1,0 +1,24 @@
+@use "../../Foundation/variable" as *;
+
+.c-top-title {
+    width: 100vw;
+    text-align: center;
+    padding-top: 170px;
+    height: 410px;
+    h1 {
+        font-family: $M;
+        font-size: 36px;
+        color: $navy;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-family: $F;
+        font-size: 20px;
+        color: #1E1E1E;
+    }
+
+    @include breakpoint(pc) {
+        display: none;
+    }
+}

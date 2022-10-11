@@ -1,0 +1,11 @@
+@use "../../Foundation/variable" as *;
+
+.c-flex-box{
+
+    &--profile{
+        @include breakpoint(pc){
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+// ブレークポイント
+//--------------------
+@mixin breakpoint($point) {
+    @if $point ==tablet {
+        @media (min-width: 600px) {
+            @content;
+        }
+    }
+
+    @if $point ==pc {
+        @media (min-width: 1025px) {
+            @content;
+        }
+    }
+
+    @if $point ==wp-pc {
+        @media (min-width: 782px) {
+            @content;
+        }
+    }
+}
+
+@include breakpoint(tablet) {}
+
+@include breakpoint(pc) {}
+
+//--------------------------
+//----------カラー----------
+
+$navy: #000052;
+$yellow: #E8EB5E;
+$white: #fff;
+
+//--------------------------
+
+//---------フォント----------
+
+$noto: 'Noto Sans JP';
+$M: 'M PLUS 1';
+$F: 'Fredericka the Great';

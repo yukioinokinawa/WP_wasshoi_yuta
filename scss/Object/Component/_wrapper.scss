@@ -1,0 +1,16 @@
+@use "../../Foundation/variable" as *;
+
+.c-wrapper{
+
+    &--header-nav{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include breakpoint(pc){
+            width: 100%;
+            
+        }
+    }
+}

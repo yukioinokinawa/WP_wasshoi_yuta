@@ -1,0 +1,56 @@
+@use "../../Foundation/variable" as *;
+
+.p-profile{
+    width:  80%;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    h1{
+        font-size: 32px;
+        margin-bottom: 48px;
+    }
+    figure{
+        margin-bottom: 45px;
+    }
+    h2{
+        font-size:  32px;
+        margin-bottom: 20px;
+        color: $navy;
+        font-family: $M;
+
+    }
+    span{
+        display: block;
+        font-size: 20px;
+        margin-bottom: 32px;
+        font-family: $M;
+    }
+    h1,h2,span{
+        text-align: center;
+    }
+    @include breakpoint(pc){
+        margin: 0 262px 0 144px;
+        padding-top: 0;
+
+        h1{
+            visibility: hidden;
+        }
+        h2{
+            font-size: 60px;
+        }
+        span{
+            font-size: 40px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+
+    &__container{
+        @include breakpoint(pc){
+            width: 50%;
+        }   
+    }
+
+
+}

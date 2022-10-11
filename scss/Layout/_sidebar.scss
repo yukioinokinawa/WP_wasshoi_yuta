@@ -1,0 +1,32 @@
+@use "../Foundation/variable" as *;
+
+.l-sidebar {
+    font-family: "Fredericka the Great";
+    font-size: 21px;
+    color: #1E1E1E;
+    width: 50%;
+    height: 100%;
+    right: -100%;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+    background: $white;
+    padding: 127px 0 0 44px;
+    transition: all 1s ease-in;
+
+    
+    @include breakpoint(tablet){
+        width: 30%;
+    }
+    @include breakpoint(pc) {
+        font-size: 32px;
+        right: -30%;
+        transition: none;
+    }
+
+    &.is-open {
+        right: -17px;
+        transition: all .7s;
+    }
+
+}
