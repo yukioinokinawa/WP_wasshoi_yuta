@@ -14,6 +14,9 @@
                 }
 
                 a{
+                    font-family: "Fredericka the Great";
+                    color: #1E1E1E;
+                    font-size: 21px;
                     overflow-wrap: break-word;
                 }
             }
@@ -30,6 +33,11 @@
                     &:first-child{
                         display: none;
                     }
+
+                    a{
+                        font-size: 32px;
+                    }
+    
                 }
             }
         }

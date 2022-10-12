@@ -87,9 +87,6 @@ p {
 }
 
 .l-sidebar {
-  font-family: "Fredericka the Great";
-  font-size: 21px;
-  color: #1E1E1E;
   width: 50%;
   height: 100%;
   right: -100%;
@@ -107,7 +104,6 @@ p {
 }
 @media (min-width: 1025px) {
   .l-sidebar {
-    font-size: 32px;
     right: -30%;
     transition: none;
   }
@@ -510,6 +506,9 @@ p {
   margin-bottom: 0;
 }
 .p-nav--sidebar__g-menu li a {
+  font-family: "Fredericka the Great";
+  color: #1E1E1E;
+  font-size: 21px;
   overflow-wrap: break-word;
 }
 @media (min-width: 1025px) {
@@ -525,6 +524,9 @@ p {
   }
   .p-nav--sidebar__g-menu li:first-child {
     display: none;
+  }
+  .p-nav--sidebar__g-menu li a {
+    font-size: 32px;
   }
 }
 .p-nav--sidebar__sns img {
