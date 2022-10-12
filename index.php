@@ -9,7 +9,7 @@
 
     <body>
         <header class="l-header">
-            <a class="c-logo--header" href="#"><img src=<?php echo get_template_directory_uri().'/imgs/header-logo.jpg' ?> alt="わっしょいゆーたロゴ"></a>
+            <a class="c-logo--header" href="#"><img src=<?php echo get_template_directory_uri().esc_url('/imgs/header-logo.jpg') ?> alt="わっしょいゆーたロゴ"></a>
             <button class="c-button--hamburger js-hamburger">
                 <span>menuボタン</span>
             </button>
@@ -35,9 +35,9 @@
             </ul>
 
             <ul class="p-nav--sidebar__sns">
-                <li><a href="#"><img src="/imgs/facebook-icon.png" alt="facebook"></a></li>
-                <li><a href="#"><img src="/imgs/twitter-icon.png" alt="twitter"></a></li>
-                <li><a href="#"><img src="/imgs/instagram-icon.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src=<?php echo get_template_directory_uri().esc_url('/imgs/facebook-icon.png') ?> alt="facebook"></a></li>
+                <li><a href="#"><img src=<?php echo get_template_directory_uri().esc_url('/imgs/twitter-icon.png') ?> alt="twitter"></a></li>
+                <li><a href="#"><img src=<?php echo get_template_directory_uri().esc_url('/imgs/instagram-icon.png') ?> alt="Instagram"></a></li>
             </ul>
     
         </aside>
