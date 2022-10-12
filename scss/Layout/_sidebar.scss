@@ -1,9 +1,6 @@
 @use "../Foundation/variable" as *;
 
 .l-sidebar {
-    font-family: "Fredericka the Great";
-    font-size: 21px;
-    color: #1E1E1E;
     width: 50%;
     height: 100%;
     right: -100%;
@@ -19,7 +16,6 @@
         width: 30%;
     }
     @include breakpoint(pc) {
-        font-size: 32px;
         right: -30%;
         transition: none;
     }
