@@ -89,8 +89,10 @@ Template Name: about（カスタムテンプレートの名前）
                     <li><p>シアタークラウンジャパン  宮城松島公演(2022</p></li>
                     <li><p>クレマチスの丘 ヴェルナールビュッフェ美術館 彷徨う絵画たち(2022)</p></li>
                 </ul>
+            </section>
+            <section>
+                <h2 class="c-title--section">寄席(2021〜</h2>
                 <ul>
-                    <li><p>寄席(2021〜</p></li>
                     <li><p>浅草 東洋館</p></li>
                     <li><p>お江戸日本橋亭</p></li>
                 </ul>

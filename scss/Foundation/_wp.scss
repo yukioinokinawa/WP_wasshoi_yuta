@@ -1,0 +1,8 @@
+@use "./variable" as *;
+
+.wpcf7-form{    //フォーム送信時に見た目が崩れるのを防ぐ
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
