@@ -644,17 +644,24 @@ p {
 }
 
 .p-history-works {
-  margin: 40px auto;
+  margin: 40px auto 60px;
 }
 .p-history-works h1 {
-  max-width: 163px;
-  margin: 0 auto 43px;
+  margin: 0 auto 80px;
   line-height: 1;
   text-align: center;
 }
 @media (min-width: 600px) {
   .p-history-works h1 {
     max-width: none;
+  }
+}
+@media (min-width: 600px) {
+  .p-history-works ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 580px;
+    margin: auto;
   }
 }
 
