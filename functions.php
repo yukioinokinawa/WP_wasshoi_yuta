@@ -2,6 +2,7 @@
 
     register_nav_menus(array(
         'page_menu' => 'サイト内ページ遷移のメニューです',
+        'year_menu'  => '年代別投稿一覧ページに遷移するメニューです',
     ) );
     add_theme_support( 'title-tag' );   //ブラウザのタイトルを取得表示
     add_theme_support('post-thumbnails');   //投稿に対してアイキャッチ画像が入れられるようにする
