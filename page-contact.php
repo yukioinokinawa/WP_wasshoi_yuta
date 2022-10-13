@@ -51,7 +51,7 @@ Template Name: contact（カスタムテンプレートの名前）
                     <p>お約束の現場へ わっしょいゆ〜た がうかがいます</p>
                 </div>
             </section>
-            <img src="/imgs/about-page(sp).jpg" alt="わっしょいゆーた">
+            <img src="<?php echo get_template_directory_uri( ).esc_url('/imgs/about-page(sp).jpg') ?>" alt="わっしょいゆーた">
         </article>
         <article class="p-form">
             <section class="c-panel--main">
@@ -61,19 +61,15 @@ Template Name: contact（カスタムテンプレートの名前）
                 </div>
             </section>
             <section class="c-contact-form">
-                <form action="confirm.php" method="post">
-                    <label>お名前<span>※</span></label><br>
-                    <input type="text" name="name"><br>
-                    <label>ご連絡先<span>※</span></label><br>
-                    <input type="text" name="address"><br>
-                    <label for="text">ご希望日時</label><br>
-                    <input type="text" name="name"><br>
-                    <label>ご希望の内容</label><br>
-                    <input type="text" name="name"><br>
-                    <label>その他<span>※</span></label><br>
-                    <textarea name="comment"></textarea><br>
-                    <button class="c-button--submit c-shadow" type=“submit>送信</button>
-                </form>
+                <?php if(have_posts()): ?>
+                <?php while(have_posts()):
+                    the_post() ?>
+                    <?php the_content(); ?>
+                <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
+                <?php else: ?>
+                    <p>表示できるページがありません<p>
+                <?php endif; ?>
             </section>
             <section class="c-panel--sub">
                 <h3>プライバシーポリシー</h3>

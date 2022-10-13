@@ -4,12 +4,12 @@
     width:  300px;
     height: 322px;
     border-radius: 50%;
-    background: url("/imgs/about-page2(sp).jpg");
+    background: url("../imgs/about-page2(sp).jpg");
     background-size: cover;
     margin: auto;
 
     @include breakpoint(pc){
-        background: url("/imgs/about-page(pc)2.jpg");
+        background: url("../imgs/about-page(pc)2.jpg");
         height: 530px;
         width: 30%;
         background-size: cover;
