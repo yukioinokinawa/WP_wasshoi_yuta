@@ -1,19 +1,22 @@
 @charset "UTF-8";
 html {
+  width: 100vw;
   font-size: 62.5%;
-  width: 100%;
   padding: 0;
   margin: 0;
 }
 
 body {
-  width: calc(100vw - 17px);
-  height: 100%;
-  position: relative;
+  width: 100vw;
   overflow-x: hidden;
 }
 body.is-open {
   position: fixed;
+}
+@media (min-width: 1025px) {
+  body {
+    width: calc(100vw - 17px);
+  }
 }
 
 img {
@@ -44,6 +47,10 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.wpcf7 .wpcf7-form .wpcf7-response-output {
+  margin: 2em 2.5em 1em;
 }
 
 .l-header {
@@ -412,6 +419,7 @@ p {
   margin-bottom: 40px;
 }
 .c-contact-form textarea {
+  min-width: 408px;
   border: 1px solid #000052;
 }
 .c-contact-form label {
@@ -447,6 +455,17 @@ p {
 @media (min-width: 1025px) {
   .c-wrapper--header-nav {
     width: 100%;
+  }
+}
+
+.c-container {
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+}
+@media (min-width: 1025px) {
+  .c-container {
+    width: calc(100vw - 17px);
   }
 }
 

@@ -8,11 +8,12 @@
     </head>
 
     <body>
-        <header class="l-header">
-            <a class="c-logo--header" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img src=<?php echo get_template_directory_uri().esc_url('/imgs/header-logo.jpg') ?> alt="わっしょいゆーたロゴ">
-            </a>
-            <button class="c-button--hamburger js-hamburger">
-                <span>menuボタン</span>
-            </button>
-        </header>
+        <div class="c-container">
+            <header class="l-header">
+                <a class="c-logo--header" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <img src=<?php echo get_template_directory_uri().esc_url('/imgs/header-logo.jpg') ?> alt="わっしょいゆーたロゴ">
+                </a>
+                <button class="c-button--hamburger js-hamburger">
+                    <span>menuボタン</span>
+                </button>
+            </header>

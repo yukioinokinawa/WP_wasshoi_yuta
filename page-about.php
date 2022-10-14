@@ -7,7 +7,7 @@ Template Name: about（カスタムテンプレートの名前）
 
 <?php get_header(); ?>
 
-<main class="l-main">
+    <main class="l-main">
         <article class="p-profile">
             <h1 class="c-title--page">PROFILE</h1>
             <div class="c-flex-box--profile">
