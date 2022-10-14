@@ -10,17 +10,25 @@
         min-width: 270px;
         border: 1px solid $navy;
         margin-bottom: 40px;
+        width: 100%;
 
     }
 
     textarea {
-        min-width: 408px;
         border: 1px solid $navy;
+        width: 100%;
+        @include breakpoint(tablet){
+            min-width: 408px;
+
+        }
     }
 
     label {
         margin-top: 40px;
-        font-size: 24px;
+        font-size: 18px;
+        @include breakpoint(tablet){
+            font-size: 24px;
+        }
     }
 
     @include breakpoint(tablet) {

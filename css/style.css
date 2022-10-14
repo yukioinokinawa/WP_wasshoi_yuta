@@ -49,6 +49,15 @@ p {
   align-items: center;
 }
 
+.wpcf7 .wpcf7-form p {
+  width: 100vw;
+  padding: 0 20px;
+}
+@media (min-width: 600px) {
+  .wpcf7 .wpcf7-form p {
+    width: auto;
+  }
+}
 .wpcf7 .wpcf7-form .wpcf7-response-output {
   margin: 2em 2.5em 1em;
 }
@@ -417,14 +426,25 @@ p {
   min-width: 270px;
   border: 1px solid #000052;
   margin-bottom: 40px;
+  width: 100%;
 }
 .c-contact-form textarea {
-  min-width: 408px;
   border: 1px solid #000052;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .c-contact-form textarea {
+    min-width: 408px;
+  }
 }
 .c-contact-form label {
   margin-top: 40px;
-  font-size: 24px;
+  font-size: 18px;
+}
+@media (min-width: 600px) {
+  .c-contact-form label {
+    font-size: 24px;
+  }
 }
 @media (min-width: 600px) {
   .c-contact-form input {
