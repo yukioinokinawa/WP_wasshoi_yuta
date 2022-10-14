@@ -2,18 +2,19 @@
 
 .p-first-view {
     width: 100vw;
-    >img {
+
+    .metaslider .slides img{ //メタスライダーの大きさを指定
 
         width: 100%;
         height: 500px;
         object-fit: cover;
-
-    }
-
-    @include breakpoint(pc){
-        img{
+    
+        
+    
+        @include breakpoint(pc){
             height: 800px;
         }
+    
     }
-
 }
+
