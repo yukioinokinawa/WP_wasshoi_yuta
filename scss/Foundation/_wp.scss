@@ -26,3 +26,12 @@
         
     }
 }
+
+#wpadminbar{
+    &.is-open{
+        top: -46px;
+        @include breakpoint(tablet){
+            top: 0;
+        }
+    }
+}

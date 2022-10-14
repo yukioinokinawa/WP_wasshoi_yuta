@@ -6,6 +6,7 @@ jQuery(function ($) {
         $(".c-layer--sidebar").toggleClass("is-open");
         $(".l-sidebar").toggleClass("is-open");
         $("body").toggleClass("is-open");
+        $("#wpadminbar").toggleClass("is-open");
     });
 
     $(window).on('resize', function() {
