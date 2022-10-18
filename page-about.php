@@ -41,8 +41,8 @@ Template Name: about（カスタムテンプレートの名前）
             <section>
                 <h2 class="c-title--section">受賞歴</h2>
                 <ul>
-                    <li><p><span>朝日テレビカルチャー三島校(2016〜2019)</span></p></li>
-                    <li><p><span>フジヤマ道場(2022〜)</span></p></li>
+                    <li><p>朝日テレビカルチャー三島校(2016〜2019)</p></li>
+                    <li><p>フジヤマ道場(2022〜)</p></li>
                 </ul>
             </section>
             <section>
@@ -91,7 +91,7 @@ Template Name: about（カスタムテンプレートの名前）
                 </ul>
             </section>
             <section>
-                <h2 class="c-title--section">寄席(2021〜</h2>
+                <h2 class="c-title--section">寄席(2021〜)</h2>
                 <ul>
                     <li><p>浅草 東洋館</p></li>
                     <li><p>お江戸日本橋亭</p></li>
