@@ -16,74 +16,25 @@
             
             <ul class="p-card">
                 <div class="c-grid">
-                    <li>
-                        <article>
-                            <img src="<?php echo get_template_directory_uri( ). '/imgs/test-img.jpg' ?>" alt="投稿サムネイル">
-                            <p>
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                            </p>
-                            <a href="#" class="c-button--go-single c-shadow">詳細ページへ</a>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <img src="<?php echo get_template_directory_uri( ). '/imgs/test-img.jpg' ?>" alt="投稿サムネイル">
-                            <p>
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                            </p>
-                            <a href="#" class="c-button--go-single c-shadow">詳細ページへ</a>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <img src="<?php echo get_template_directory_uri( ). '/imgs/test-img.jpg' ?>" alt="投稿サムネイル">
-                            <p>
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                            </p>
-                            <a href="#" class="c-button--go-single c-shadow">詳細ページへ</a>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <img src="<?php echo get_template_directory_uri( ). '/imgs/test-img.jpg' ?>" alt="投稿サムネイル">
-                            <p>
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                            </p>
-                            <a href="#" class="c-button--go-single c-shadow">詳細ページへ</a>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <img src="<?php echo get_template_directory_uri( ). '/imgs/test-img.jpg' ?>" alt="投稿サムネイル">
-                            <p>
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                            </p>
-                            <a href="#" class="c-button--go-single c-shadow">詳細ページへ</a>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <img src="<?php echo get_template_directory_uri( ). '/imgs/test-img.jpg' ?>" alt="投稿サムネイル">
-                            <p>
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                                参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト参考テキスト
-                            </p>
-                            <a href="#" class="c-button--go-single c-shadow">詳細ページへ</a>
-                        </article>
-                    </li>
+                    <?php 
+                        if( have_posts()):
+                            while( have_posts()):
+                                the_post(); ?>
+                            <li>
+                                <article>
+                                    <?php the_content(); ?>
+                                    <a href="#" class="c-button--go-single c-shadow">詳細ページへ</a>
+                                </article>
+                            </li>
+
+                        <?php endwhile; ?>
+                        <?php else: ?>
+                            <p>表示する投稿がありません</p>
+                    <?php endif; ?>
+
                 </div>
             </ul>
+            <?php wp_pagenavi(); ?>
         </main>
 
 <?php get_footer(); ?>

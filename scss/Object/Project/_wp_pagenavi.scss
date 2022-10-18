@@ -1,0 +1,64 @@
+@use "../../Foundation/variable" as *;
+
+.wp-pagenavi{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    >.pages{
+        margin-right: 30px;
+        padding-top: 6px;
+        font-size: 18px;
+        position: relative;
+        border-color: #000080;
+        border: none;
+
+        &::before{
+            content: "page";
+            position: absolute;
+            color: $white;
+            top: 0;
+            left: -50px;
+        }
+
+        a{
+            color: #000000;
+        }
+
+    }
+    >.current, .page{
+        margin: 0 30px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        text-align: center;
+        border: 2px solid #000080;
+        padding: 4px;
+        font-family: $noto;
+
+
+    }
+    >span.current{
+        padding: 4px;
+        color: $white;
+        background-color: #000080;
+        border: 2px solid;
+        border-color: #000080;
+        font-family: $noto;
+
+    }
+    >.page{
+
+    }
+    
+    >.previouspostslink, .nextpostslink{
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        text-align: center;
+        margin: 0 30px;
+        border: none;
+        color: #000000;
+
+
+    }
+}
