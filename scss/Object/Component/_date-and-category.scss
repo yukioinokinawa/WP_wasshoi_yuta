@@ -1,0 +1,8 @@
+@use "../../Foundation/variable" as *;
+
+.c-date-and-category {
+    color: #222222;
+    font-size: 16px;
+    font-family: $noto;
+    text-decoration: underline $yellow;
+}
