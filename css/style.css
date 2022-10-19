@@ -827,4 +827,24 @@ p {
   border: none;
   color: #000000;
 }
+
+.p-single {
+  background-color: #fff;
+  margin: 0 260px;
+}
+.p-single__intro {
+  text-align: center;
+}
+.p-single > h2 {
+  font-family: "Noto Sans JP";
+  font-size: 25px;
+  color: #000052;
+  font-weight: bold;
+}
+.p-single > h3 {
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
