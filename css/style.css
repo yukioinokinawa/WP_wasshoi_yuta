@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 html {
   width: 100vw;
   font-size: 62.5%;
@@ -10,9 +11,11 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
+
 body.is-open {
   position: fixed;
 }
+
 @media (min-width: 1025px) {
   body {
     width: calc(100vw - 17px);
@@ -53,11 +56,13 @@ p {
   width: 100vw;
   padding: 0 20px;
 }
+
 @media (min-width: 600px) {
   .wpcf7 .wpcf7-form p {
     width: auto;
   }
 }
+
 .wpcf7 .wpcf7-form .wpcf7-response-output {
   margin: 2em 2.5em 1em;
 }
@@ -65,6 +70,7 @@ p {
 #wpadminbar.is-open {
   top: -46px;
 }
+
 @media (min-width: 600px) {
   #wpadminbar.is-open {
     top: 0;
@@ -79,11 +85,13 @@ p {
   align-items: center;
   position: relative;
 }
+
 @media (min-width: 1025px) {
   .l-header {
     padding-left: 40px;
     justify-content: inherit;
   }
+
   .l-header button {
     display: none;
   }
@@ -99,6 +107,7 @@ p {
   position: relative;
   padding-top: 30px;
 }
+
 @media (min-width: 1025px) {
   .l-footer {
     height: 128px;
@@ -106,7 +115,8 @@ p {
     display: flex;
     justify-content: flex-start;
   }
-  .l-footer > p {
+
+  .l-footer>p {
     position: absolute;
     top: 57px;
     margin-left: 220px;
@@ -128,17 +138,20 @@ p {
   padding: 127px 0 0 44px;
   transition: all 1s ease-in;
 }
+
 @media (min-width: 600px) {
   .l-sidebar {
     width: 30%;
   }
 }
+
 @media (min-width: 1025px) {
   .l-sidebar {
     right: -30%;
     transition: none;
   }
 }
+
 .l-sidebar.is-open {
   right: -17px;
   transition: all 0.7s;
@@ -151,7 +164,9 @@ p {
   right: 25px;
   z-index: 15;
 }
-.c-button--hamburger::before, .c-button--hamburger::after {
+
+.c-button--hamburger::before,
+.c-button--hamburger::after {
   content: "";
   width: 100%;
   height: 5px;
@@ -160,13 +175,16 @@ p {
   display: block;
   transition: transform 0.2s;
 }
+
 .c-button--hamburger::before {
   top: 0px;
 }
+
 .c-button--hamburger::after {
   top: 30px;
 }
-.c-button--hamburger > span {
+
+.c-button--hamburger>span {
   width: 100%;
   height: 5px;
   font-size: 0;
@@ -176,21 +194,27 @@ p {
   transition: transform 0.2s;
   background: #000052;
 }
+
 .c-button--hamburger.is-open {
   right: 25px;
 }
+
 .c-button--hamburger.is-open::before {
   transform: rotate(45deg);
   top: 15px;
 }
+
 .c-button--hamburger.is-open::after {
   transform: rotate(-45deg);
   top: 15px;
 }
-.c-button--hamburger.is-open > span {
+
+.c-button--hamburger.is-open>span {
   background: none;
 }
-.c-button--profile, .c-button--go-single {
+
+.c-button--profile,
+.c-button--go-single {
   background: #000052;
   color: #fff;
   font-size: 15px;
@@ -199,11 +223,13 @@ p {
   margin: auto;
   font-family: "Noto Sans JP";
 }
+
 .c-button--profile {
   padding: 18px 20px;
   min-width: 320px;
   width: 320px;
 }
+
 .c-button--go-single {
   padding: 18px 103px;
   min-width: 290px;
@@ -211,12 +237,14 @@ p {
   width: 100%;
   position: relative;
 }
+
 .c-button--go-single::after {
   position: absolute;
   content: "▶";
   top: 20px;
   right: 25px;
 }
+
 .c-button--submit {
   background: #000052;
   color: #fff;
@@ -228,21 +256,25 @@ p {
   margin: 40px auto;
   position: relative;
 }
+
 .c-button--submit::after {
   position: absolute;
   content: "▶";
   top: 20px;
   right: 25px;
 }
+
 @media (min-width: 600px) {
   .c-button--submit {
     width: 440px;
     font-size: 24px;
   }
 }
+
 .c-panel--main {
   text-align: center;
 }
+
 .c-panel--main__mobile {
   display: inline-block;
   margin: 50px 0;
@@ -253,15 +285,18 @@ p {
   border-radius: 15px;
   box-shadow: 5px 10px #E8EB5E;
 }
-.c-panel--main__mobile > p {
+
+.c-panel--main__mobile>p {
   font-size: 32px;
   font-weight: bold;
   color: #000052;
   margin: 20px 0;
 }
+
 .c-panel--main__pc {
   display: none;
 }
+
 @media (min-width: 600px) {
   .c-panel--main__pc {
     display: inline-block;
@@ -273,16 +308,19 @@ p {
     border-radius: 15px;
     box-shadow: 5px 10px #E8EB5E;
   }
-  .c-panel--main__pc > p {
+
+  .c-panel--main__pc>p {
     font-size: 32px;
     font-weight: bold;
     color: #000052;
     margin: 20px 0;
   }
+
   .c-panel--main__mobile {
     display: none;
   }
 }
+
 .c-panel--sub {
   display: inline-block;
   margin: 50px 50px;
@@ -292,10 +330,12 @@ p {
   border: 1px solid #E8EB5E;
   border-radius: 15px;
 }
+
 .c-panel--sub h3 {
   margin: 10px 0;
   font-size: 15px;
 }
+
 .c-panel--sub p {
   margin: 20px 30px;
 }
@@ -308,6 +348,7 @@ p {
   background-size: cover;
   margin: auto;
 }
+
 @media (min-width: 1025px) {
   .c-thumbnail {
     background: url("../imgs/about-page(pc)2.jpg");
@@ -321,16 +362,19 @@ p {
   font-size: 32px;
   font-family: "Fredericka the Great";
 }
+
 .c-title--section {
   font-size: 32px;
   color: #000052;
 }
+
 .c-title--number {
   font-family: "Noto Sans JP";
   font-size: 24px;
   color: 10E1E;
   padding-bottom: 20px;
 }
+
 .c-title--number::first-letter {
   font-family: "Fredericka the Great";
   font-size: 45px;
@@ -344,26 +388,33 @@ p {
   margin: 0 auto 48px;
   max-width: 473px;
 }
+
 .c-list--profile li {
   margin-bottom: 10px;
 }
+
 .c-list--profile li:last-child {
   margin-bottom: 0;
 }
+
 .c-list--history {
   text-align: center;
 }
+
 .c-list--history li {
   margin-bottom: 22px;
 }
+
 .c-list--history li:last-child {
   margin-bottom: 0;
 }
+
 .c-list--history a {
   font-size: 27px;
   font-weight: bold;
   color: #222222;
 }
+
 @media (min-width: 1025px) {
   .c-list--history {
     width: 630px;
@@ -394,17 +445,20 @@ p {
   padding-top: 170px;
   height: 410px;
 }
+
 .c-top-title h1 {
   font-family: "M PLUS 1";
   font-size: 36px;
   color: #000052;
   margin-bottom: 40px;
 }
+
 .c-top-title p {
   font-family: "Fredericka the Great";
   font-size: 20px;
   color: #1E1E1E;
 }
+
 @media (min-width: 1025px) {
   .c-top-title {
     display: none;
@@ -421,6 +475,7 @@ p {
   z-index: 5;
   display: none;
 }
+
 .c-layer--sidebar.is-open {
   display: inherit;
 }
@@ -430,6 +485,7 @@ p {
   justify-content: center;
   margin: 40px 0;
 }
+
 .c-contact-form input {
   height: 50px;
   min-width: 270px;
@@ -437,28 +493,34 @@ p {
   margin-bottom: 40px;
   width: 100%;
 }
+
 .c-contact-form textarea {
   border: 1px solid #000052;
   width: 100%;
 }
+
 @media (min-width: 600px) {
   .c-contact-form textarea {
     min-width: 408px;
   }
 }
+
 .c-contact-form label {
   margin-top: 40px;
   font-size: 18px;
 }
+
 @media (min-width: 600px) {
   .c-contact-form label {
     font-size: 24px;
   }
 }
+
 @media (min-width: 600px) {
   .c-contact-form input {
     width: 440px;
   }
+
   .c-contact-form textarea {
     width: 440px;
   }
@@ -471,6 +533,7 @@ p {
 .c-logo--header {
   width: 120px;
 }
+
 .c-logo--header img {
   width: 100%;
 }
@@ -481,6 +544,7 @@ p {
   align-items: center;
   justify-content: space-between;
 }
+
 @media (min-width: 1025px) {
   .c-wrapper--header-nav {
     width: 100%;
@@ -492,6 +556,7 @@ p {
   height: 100%;
   overflow-x: hidden;
 }
+
 @media (min-width: 1025px) {
   .c-container {
     width: calc(100vw - 17px);
@@ -504,7 +569,7 @@ p {
   font-size: 16px;
   font-family: "Noto Sans JP";
   -webkit-text-decoration: underline #E8EB5E;
-          text-decoration: underline #E8EB5E;
+  text-decoration: underline #E8EB5E;
 }
 
 .p-card {
@@ -512,35 +577,44 @@ p {
   display: flex;
   justify-content: center;
 }
+
 .p-card li {
   margin-bottom: 65px;
   max-width: 350px;
 }
+
 .p-card img {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-.p-card img, .p-card p {
+
+.p-card img,
+.p-card p {
   margin-bottom: 20px;
 }
+
 .p-card p {
   line-height: 1.75;
   color: #5d5d63;
 }
+
 @media (min-width: 600px) {
   .p-card {
     margin: 0 171px;
   }
+
   .p-card li {
     width: 400px;
     max-width: 400px;
   }
+
   .p-card img {
     width: 100%;
     height: 400px;
   }
+
   .p-card a {
     padding: 18px 154px;
   }
@@ -554,6 +628,7 @@ p {
   font-size: 24px;
   font-family: "Noto Sans JP";
 }
+
 .p-form span {
   color: #BD0020;
 }
@@ -561,19 +636,23 @@ p {
 .p-nav--sidebar__g-menu {
   margin-bottom: 45px;
 }
+
 .p-nav--sidebar__g-menu li {
   margin-bottom: 35px;
   max-width: 120px;
 }
+
 .p-nav--sidebar__g-menu li:last-child {
   margin-bottom: 0;
 }
+
 .p-nav--sidebar__g-menu li a {
   font-family: "Fredericka the Great";
   color: #1E1E1E;
   font-size: 21px;
   overflow-wrap: break-word;
 }
+
 @media (min-width: 1025px) {
   .p-nav--sidebar__g-menu {
     display: flex;
@@ -581,21 +660,26 @@ p {
     left: -230%;
     top: 57px;
   }
+
   .p-nav--sidebar__g-menu li {
     margin: 0 64px 0 0;
     max-width: inherit;
   }
+
   .p-nav--sidebar__g-menu li:first-child {
     display: none;
   }
+
   .p-nav--sidebar__g-menu li a {
     font-size: 32px;
   }
 }
+
 .p-nav--sidebar__sns img {
   width: 32px;
   margin-bottom: 20px;
 }
+
 .p-nav--sidebar__sns.is-open {
   top: -850px;
   position: absolute;
@@ -603,6 +687,7 @@ p {
   z-index: 15;
   left: inherit;
 }
+
 @media (min-width: 1025px) {
   .p-nav--sidebar__sns {
     display: flex;
@@ -610,22 +695,27 @@ p {
     bottom: 40px;
     right: 130%;
   }
+
   .p-nav--sidebar__sns li {
     margin-right: 33px;
   }
+
   .p-nav--sidebar__sns a {
     display: block;
     width: 45px;
     height: 45px;
   }
+
   .p-nav--sidebar__sns img {
     width: 100%;
     height: 100%;
   }
 }
+
 .p-nav--category {
   margin: 0 94px;
 }
+
 .p-nav--category a {
   width: auto;
   white-space: nowrap;
@@ -636,46 +726,59 @@ p {
   margin: 0 auto;
   padding-top: 50px;
 }
+
 .p-profile h1 {
   font-size: 32px;
   margin-bottom: 48px;
 }
+
 .p-profile figure {
   margin-bottom: 45px;
 }
+
 .p-profile h2 {
   font-size: 32px;
   margin-bottom: 20px;
   color: #000052;
   font-family: "M PLUS 1";
 }
+
 .p-profile span {
   display: block;
   font-size: 20px;
   margin-bottom: 32px;
   font-family: "M PLUS 1";
 }
-.p-profile h1, .p-profile h2, .p-profile span {
+
+.p-profile h1,
+.p-profile h2,
+.p-profile span {
   text-align: center;
 }
+
 @media (min-width: 1025px) {
   .p-profile {
     margin: 0 262px 0 144px;
     padding-top: 0;
   }
+
   .p-profile h1 {
     visibility: hidden;
   }
+
   .p-profile h2 {
     font-size: 60px;
   }
+
   .p-profile span {
     font-size: 40px;
   }
+
   .p-profile p {
     font-size: 18px;
   }
 }
+
 @media (min-width: 1025px) {
   .p-profile__container {
     width: 50%;
@@ -687,18 +790,23 @@ p {
   text-align: center;
   margin: 0 43px;
 }
+
 .p-career h2 {
   margin-bottom: 32px;
 }
+
 .p-career h3 {
   font-size: 20px;
 }
+
 .p-career ul {
   margin-bottom: 56px;
 }
+
 .p-career li {
   margin-bottom: 1.75rem;
 }
+
 @media (min-width: 1025px) {
   .p-career span {
     font-size: 32px;
@@ -709,16 +817,19 @@ p {
 .p-history-works {
   margin: 40px auto 60px;
 }
+
 .p-history-works h1 {
   margin: 0 auto 80px;
   line-height: 1;
   text-align: center;
 }
+
 @media (min-width: 600px) {
   .p-history-works h1 {
     max-width: none;
   }
 }
+
 @media (min-width: 600px) {
   .p-history-works ul {
     display: flex;
@@ -731,12 +842,14 @@ p {
 .p-first-view {
   width: 100vw;
 }
+
 .p-first-view .metaslider .slides img {
   width: 100%;
   height: 500px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 @media (min-width: 1025px) {
   .p-first-view .metaslider .slides img {
     height: 800px;
@@ -749,15 +862,19 @@ p {
   padding-top: 50px;
   text-align: center;
 }
+
 .p-application-method section {
   margin-bottom: 25px;
 }
+
 .p-application-method p {
   margin-bottom: 25px;
 }
+
 .p-application-method img {
   display: none;
 }
+
 @media (min-width: 1025px) {
   .p-application-method img {
     display: block;
@@ -766,7 +883,7 @@ p {
     height: 419px;
     border-radius: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -775,9 +892,11 @@ p {
   margin: 0 auto;
   padding-top: 50px;
 }
+
 .p-contact h1 {
   margin-bottom: 40px;
 }
+
 @media (min-width: 1025px) {
   .p-contact h1 {
     margin-bottom: 48px;
@@ -790,7 +909,8 @@ p {
   justify-content: center;
   margin: 50px 0;
 }
-.wp-pagenavi > .pages {
+
+.wp-pagenavi>.pages {
   margin-right: 30px;
   padding-top: 6px;
   font-size: 18px;
@@ -798,17 +918,21 @@ p {
   border-color: #000080;
   border: none;
 }
-.wp-pagenavi > .pages::before {
+
+.wp-pagenavi>.pages::before {
   content: "page";
   position: absolute;
   color: #fff;
   top: 0;
   left: -50px;
 }
-.wp-pagenavi > .pages a {
+
+.wp-pagenavi>.pages a {
   color: #000000;
 }
-.wp-pagenavi > .current, .wp-pagenavi .page {
+
+.wp-pagenavi>.current,
+.wp-pagenavi .page {
   margin: 0 30px;
   width: 40px;
   height: 40px;
@@ -818,7 +942,8 @@ p {
   padding: 4px;
   font-family: "Noto Sans JP";
 }
-.wp-pagenavi > span.current {
+
+.wp-pagenavi>span.current {
   padding: 4px;
   color: #fff;
   background-color: #000080;
@@ -826,7 +951,9 @@ p {
   border-color: #000080;
   font-family: "Noto Sans JP";
 }
-.wp-pagenavi > .previouspostslink, .wp-pagenavi .nextpostslink {
+
+.wp-pagenavi>.previouspostslink,
+.wp-pagenavi .nextpostslink {
   width: 40px;
   height: 40px;
   font-size: 25px;
@@ -837,31 +964,57 @@ p {
 }
 
 .p-single {
+
   margin: 50px 260px;
+
+  background-color: #fff;
+  margin: 0 260px;
+
 }
+
 .p-single__intro {
   text-align: center;
 }
+
 .p-single__intro h1 {
   margin: 50px 0 25px 0;
 }
+
 .p-single__intro .post-categories {
   display: inline-table;
 }
+
 .p-single__intro .post-categories li {
   margin-left: 20px;
   float: left;
 }
+
 .p-single__intro .post-categories li a {
   color: #222222;
   font-size: 16px;
   font-family: "Noto Sans JP";
   -webkit-text-decoration: underline #E8EB5E;
-          text-decoration: underline #E8EB5E;
+  text-decoration: underline #E8EB5E;
 }
+
 .p-single .size-post-thumbnail {
   margin: 30px 0;
   height: 100%;
   width: 300px;
-}
-/*# sourceMappingURL=style.css.map */
+
+  .p-single>h2 {
+    font-family: "Noto Sans JP";
+    font-size: 25px;
+    color: #000052;
+    font-weight: bold;
+  }
+
+  .p-single>h3 {
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+
+  }
+
+  /*# sourceMappingURL=style.css.map */

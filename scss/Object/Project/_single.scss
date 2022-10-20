@@ -1,6 +1,7 @@
 @use "../../Foundation/variable" as *;
 
 .p-single {
+
     margin: 50px 260px;
 
     &__intro {
@@ -33,4 +34,29 @@
         height: 100%;
         width: 300px;
     }
+
+    //投稿ページに必要なスタイリング
+    background-color: #fff;
+    margin: 0 260px;
+
+    &__intro {
+        text-align: center;
+    }
+
+    >h2 {
+        font-family: $noto;
+        font-size: 25px;
+        color: $navy;
+        font-weight: bold;
+    }
+
+    >h3 {
+        font-family: $noto;
+        font-size: 24px;
+        color: #000;
+        font-weight: bold;
+    }
+
+
+
 }
