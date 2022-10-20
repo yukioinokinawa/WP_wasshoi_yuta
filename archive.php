@@ -22,7 +22,8 @@
                     the_post(); ?>
                     <li>
                         <article>
-                            <?php the_content(); ?>
+                            <?php the_post_thumbnail(); ?>
+                            <?php the_excerpt(); ?>
                             <a href="<?php the_permalink(); ?>" class="c-button--go-single c-shadow">詳細ページへ</a>
                         </article>
                     </li>
