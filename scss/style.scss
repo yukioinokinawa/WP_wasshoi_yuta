@@ -36,6 +36,7 @@
 @use "object/Component/logo";
 @use "object/Component/wrapper";
 @use "object/Component/container";
+@use "object/Component/date-and-category";
 
 
 // ----------
@@ -53,6 +54,7 @@
 @use "object/Project/application-method";
 @use "Object/Project/contact";
 @use "object/Project/wp_pagenavi";
+@use "object/Project/single";
 
 // ----------
 // Utility

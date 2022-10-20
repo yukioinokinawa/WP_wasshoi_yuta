@@ -1,0 +1,91 @@
+@use "../../Foundation/variable" as *;
+
+.p-single {
+
+
+    &__intro {
+        text-align: center;
+
+        h1 {
+            margin: 50px 0 25px 0;
+        }
+
+        .post-categories {
+            display: inline-table;
+
+            li {
+                margin-left: 20px;
+                float: left;
+
+                a {
+                    color: #222222;
+                    font-size: 16px;
+                    font-family: $noto;
+                    text-decoration: underline $yellow;
+                }
+            }
+        }
+
+        p {
+            color: #222222;
+            font-size: 16px;
+            font-family: $noto;
+            text-decoration: underline $yellow;
+        }
+
+    }
+
+    .size-post-thumbnail {
+        margin: 30px 0;
+        height: 100%;
+        width: 300px;
+    }
+
+    @include breakpoint(pc) {
+        margin: 50px 260px;
+    }
+
+    &__main-article {
+        margin: 0 45px 0 40px;
+
+
+        p {
+            font-size: 16px;
+            font-family: $noto;
+            font-weight: normal;
+            margin-bottom: 50px;
+        }
+
+        .wp-block-table {
+            margin: 30px 0;
+
+            table,
+            td {
+                border: solid #797979 2px;
+            }
+
+            td {
+                text-align: center;
+            }
+        }
+
+        ol {
+            font-size: 20px;
+            font-family: $noto;
+            font-weight: 400;
+            margin: 15px 0;
+
+            li::marker {
+                font-family: $F;
+                font-size: 20px;
+            }
+        }
+
+        ul {
+            font-size: 20px;
+            font-family: $noto;
+            font-weight: 400;
+            margin: 15px 0;
+        }
+    }
+}
