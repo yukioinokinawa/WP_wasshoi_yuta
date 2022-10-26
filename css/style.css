@@ -877,7 +877,6 @@ p {
   margin: 0 45px 0 40px;
 }
 .p-single__main-article p {
-  font-size: 16px;
   font-family: "Noto Sans JP";
   font-weight: normal;
   margin-bottom: 50px;
@@ -888,9 +887,6 @@ p {
 .p-single__main-article .wp-block-table table,
 .p-single__main-article .wp-block-table td {
   border: solid #797979 2px;
-}
-.p-single__main-article .wp-block-table td {
-  text-align: center;
 }
 .p-single__main-article ol {
   font-size: 20px;
