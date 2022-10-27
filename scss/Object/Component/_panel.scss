@@ -59,6 +59,35 @@
 
     }
 
+    &--mini {
+        display: inline-block;
+        margin: 50px 0;
+        text-align: center;
+        width: 329px;
+        height: 100%;
+        border: 2px solid $navy;
+        border-radius: 15px;
+        box-shadow: 5px 10px $yellow;
+
+        >p {
+            font-size: 32px;
+            font-weight: bold;
+            color: $navy;
+            margin: 20px 0;
+        }
+
+        &__memo {
+            display: none;
+
+            @include breakpoint(pc) {
+                display: inherit;
+                text-align: center;
+                line-height: 3rem;
+                margin: 20px 0;
+            }
+        }
+    }
+
     &--sub {
         //プライバシーポリシーのパネル
         display: inline-block;
