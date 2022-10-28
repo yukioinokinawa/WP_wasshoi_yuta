@@ -31,6 +31,7 @@
             font-size: 16px;
             font-family: $noto;
             text-decoration: underline $yellow;
+            margin-bottom: 22px;
         }
 
     }
@@ -48,6 +49,25 @@
     &__main-article {
         margin: 0 45px 0 40px;
 
+        h2 {
+            font-size: 25px;
+            color: $navy;
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        h4,
+        h5 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 22px;
+        }
 
         p {
             font-family: $noto;
@@ -61,15 +81,31 @@
             table,
             td {
                 border: solid #797979 2px;
+                font-size: 24px;
+                font-weight: 400;
+                font-family: $noto;
+                line-height: 2;
             }
 
+        }
+
+        .wp-block-media-text {
+            &__media {
+                margin-bottom: 33px;
+            }
+
+            &__content {
+                font-family: $noto;
+                font-size: 16px;
+                padding: 0;
+            }
         }
 
         ol {
             font-size: 20px;
             font-family: $noto;
             font-weight: 400;
-            margin: 15px 0;
+            margin: 15px 20px;
 
             li::marker {
                 font-family: $F;
@@ -81,7 +117,50 @@
             font-size: 20px;
             font-family: $noto;
             font-weight: 400;
-            margin: 15px 0;
+            margin: 15px 20px;
+        }
+
+        .wp-block-buttons {
+
+            //投稿ページ内で使用するボタン
+            .wp-block-button {
+                margin: 20px 0;
+
+
+                &__link {
+                    background: #000052;
+                    color: #fff;
+                    font-size: 15px;
+                    border-radius: 100px;
+                    min-width: 290px;
+                    display: block;
+                    box-shadow: 7px 5px 0px $yellow;
+                }
+            }
+        }
+
+        @include breakpoint(tablet) {
+            margin: 0 60px;
+
+            p {
+                margin: 30px 0 50px 0;
+            }
+
+            .wp-block-table {
+                margin: 30px 0 50px 0;
+            }
+
+            .wp-block-media-text {
+                margin: 30px 0 50px 0;
+
+                &__media {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        @include breakpoint(pc) {
+            margin: 0;
         }
     }
 }
