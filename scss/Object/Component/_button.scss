@@ -42,6 +42,7 @@
 
         &.is-open {
             right: 25px;
+
             &::before {
                 transform: rotate(45deg);
                 top: 15px;
@@ -59,7 +60,9 @@
 
     }
 
-    &--profile, &--go-single{   //ボタン共通のCSS
+    &--profile,
+    &--go-single {
+        //ボタン共通のCSS
         background: $navy;
         color: $white;
         font-size: 15px;
@@ -125,4 +128,5 @@
         //投稿ページ用のサンプル
 
     }
+
 }

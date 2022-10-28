@@ -379,6 +379,7 @@ p {
 }
 .c-list--history {
   text-align: center;
+  font-family: "Fredericka the Great";
 }
 .c-list--history li {
   margin-bottom: 22px;
@@ -518,6 +519,7 @@ p {
   width: 100vw;
   height: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 @media (min-width: 1025px) {
   .c-container {
@@ -746,6 +748,11 @@ p {
     max-width: none;
   }
 }
+@media (min-width: 1025px) {
+  .p-history-works h1 {
+    display: none;
+  }
+}
 @media (min-width: 600px) {
   .p-history-works ul {
     display: flex;
@@ -891,6 +898,7 @@ p {
   font-family: "Noto Sans JP";
   -webkit-text-decoration: underline #E8EB5E;
           text-decoration: underline #E8EB5E;
+  margin-bottom: 22px;
 }
 .p-single .size-post-thumbnail {
   margin: 30px 0;
@@ -905,10 +913,28 @@ p {
 .p-single__main-article {
   margin: 0 45px 0 40px;
 }
+.p-single__main-article h2 {
+  font-size: 25px;
+  color: #000052;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+.p-single__main-article h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+.p-single__main-article h4,
+.p-single__main-article h5 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
 .p-single__main-article p {
   font-size: 16px;
   font-family: "Noto Sans JP";
   font-weight: normal;
+  margin-bottom: 50px;
 }
 .p-single__main-article .wp-block-table {
   margin: 30px 0;
@@ -916,15 +942,27 @@ p {
 .p-single__main-article .wp-block-table table,
 .p-single__main-article .wp-block-table td {
   border: solid #797979 2px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Noto Sans JP";
+  line-height: 2;
 }
 .p-single__main-article .wp-block-table td {
   text-align: center;
+}
+.p-single__main-article .wp-block-media-text__media {
+  margin-bottom: 33px;
+}
+.p-single__main-article .wp-block-media-text__content {
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  padding: 0;
 }
 .p-single__main-article ol {
   font-size: 20px;
   font-family: "Noto Sans JP";
   font-weight: 400;
-  margin: 15px 0;
+  margin: 15px 20px;
 }
 .p-single__main-article ol li::marker {
   font-family: "Fredericka the Great";
@@ -934,6 +972,40 @@ p {
   font-size: 20px;
   font-family: "Noto Sans JP";
   font-weight: 400;
-  margin: 15px 0;
+  margin: 15px 20px;
+}
+.p-single__main-article .wp-block-buttons .wp-block-button {
+  margin: 20px 0;
+}
+.p-single__main-article .wp-block-buttons .wp-block-button__link {
+  background: #000052;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 100px;
+  min-width: 290px;
+  display: block;
+  box-shadow: 7px 5px 0px #E8EB5E;
+}
+@media (min-width: 600px) {
+  .p-single__main-article {
+    margin: 0 60px;
+  }
+  .p-single__main-article p {
+    margin: 30px 0 50px 0;
+  }
+  .p-single__main-article .wp-block-table {
+    margin: 30px 0 50px 0;
+  }
+  .p-single__main-article .wp-block-media-text {
+    margin: 30px 0 50px 0;
+  }
+  .p-single__main-article .wp-block-media-text__media {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1025px) {
+  .p-single__main-article {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
