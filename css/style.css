@@ -931,7 +931,6 @@ p {
   margin-bottom: 22px;
 }
 .p-single__main-article p {
-  font-size: 16px;
   font-family: "Noto Sans JP";
   font-weight: normal;
   margin-bottom: 50px;
@@ -947,6 +946,7 @@ p {
   font-family: "Noto Sans JP";
   line-height: 2;
 }
+
 .p-single__main-article .wp-block-table td {
   text-align: center;
 }
@@ -958,6 +958,7 @@ p {
   font-size: 16px;
   padding: 0;
 }
+
 .p-single__main-article ol {
   font-size: 20px;
   font-family: "Noto Sans JP";
@@ -1008,4 +1009,3 @@ p {
     margin: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
