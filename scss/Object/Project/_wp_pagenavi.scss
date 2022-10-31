@@ -21,7 +21,10 @@
             left: -50px;
         }
 
-        a {
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
             color: #000000;
         }
 
@@ -37,6 +40,7 @@
         border: 2px solid #000080;
         padding: 4px;
         font-family: $noto;
+        color: #000000;
 
 
     }
