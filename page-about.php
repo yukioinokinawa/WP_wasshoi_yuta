@@ -26,7 +26,7 @@ Template Name: about（カスタムテンプレートの名前）
                         <p>ステージの特徴は観客を引き込む脚本と演出、心に残るキャラクター。国内外のストリートで長年培われた多彩なアドリブと、ライブ感を大事にしたショーで世代や言葉の壁を越え楽しまれている。</p>
                     </li>
                 </ul>
-                <a href="#" class="c-button--profile c-shadow">プロフィールのダウンロードはこちら ▶︎</a>
+                <a href="<?php echo get_template_directory_uri() . esc_url('/imgs/wasshoiyuta.pdf') ?>" target="_blank" class=" c-button--profile c-shadow" alt="わっしょいゆーたプロフィール">プロフィールのダウンロードはこちら ▶︎</a>
             </div>
         </div>
     </article>
