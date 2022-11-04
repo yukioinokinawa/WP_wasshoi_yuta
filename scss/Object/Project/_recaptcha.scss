@@ -1,0 +1,14 @@
+@use "../../Foundation/variable" as *;
+
+.p-recaptcha {
+    font-size: 10px;
+    color: $navy;
+
+    >p {
+        font-size: 10px;
+    }
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
