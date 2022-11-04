@@ -13,6 +13,21 @@
 
         )); ?>
     </section>
+                )); ?>
+            </section>
+            
+            <ul class="p-card">
+                <div class="c-grid">
+                    <?php 
+                        if( have_posts()):
+                            while( have_posts()):
+                                the_post(); ?>
+                            <li>
+                                <article>
+                                    <?php the_content(); ?>
+                                    <a href="<?php the_permalink(); ?>" class="c-button--go-single c-shadow">詳細ページへ</a>
+                                </article>
+                            </li>
 
     <ul class="p-card">
         <div class="c-grid">
