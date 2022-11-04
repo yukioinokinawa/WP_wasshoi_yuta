@@ -86,6 +86,11 @@ Template Name: contact（カスタムテンプレートの名前）
                 お預かりした個人情報はお返事をさせていただく以外に
                 使用することはございません</p>
         </section>
+        <section class="p-recaptcha">
+            <p>This site is protected by reCAPTCHA and the Google</p>
+            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+            <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+        </section>
     </article>
 </main>
 

@@ -1008,4 +1008,16 @@ p {
     margin: 0;
   }
 }
+
+.p-recaptcha {
+  font-size: 10px;
+  color: #000052;
+}
+.p-recaptcha > p {
+  font-size: 10px;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
 /*# sourceMappingURL=style.css.map */

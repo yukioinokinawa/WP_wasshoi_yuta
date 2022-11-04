@@ -26,7 +26,7 @@ Template Name: about（カスタムテンプレートの名前）
                         <p>ステージの特徴は観客を引き込む脚本と演出、心に残るキャラクター。国内外のストリートで長年培われた多彩なアドリブと、ライブ感を大事にしたショーで世代や言葉の壁を越え楽しまれている。</p>
                     </li>
                 </ul>
-                <a href="#" class="c-button--profile c-shadow">プロフィールのダウンロードはこちら ▶︎</a>
+                <a href="<?php echo get_template_directory_uri() . esc_url('/imgs/wasshoiyuta.pdf') ?>" target="_blank" class=" c-button--profile c-shadow" alt="わっしょいゆーたプロフィール">プロフィールのダウンロードはこちら ▶︎</a>
             </div>
         </div>
     </article>
@@ -143,7 +143,7 @@ Template Name: about（カスタムテンプレートの名前）
                     <p>舞台 セブンエレファントブリングハピネス 大道芸人役として (2018静岡)</p>
                 </li>
                 <li>
-                    <p>桂井F.バレエアカデミー＆ダンスカンパニー発表会 出演(2017,2018,2019,2021静岡)</p>
+                    <p>桂井F.バレエアカデミー＆ダンスカンパニー発表会 <br>( 2017, 2018, 2019, 2021 静岡)</p>
                 </li>
                 <li>
                     <p>舞台 タイヨウのうた NHK大阪ホール(2018)</p>
@@ -177,7 +177,7 @@ Template Name: about（カスタムテンプレートの名前）
             <h2 class="c-title--section">教室</h2>
             <ul>
                 <li>
-                    <p>朝日テレビカルチャー三島校(2016〜2019)</p>
+                    <p>朝日テレビカルチャー三島校<br>(2016〜2019)</p>
                 </li>
                 <li>
                     <p>フジヤマ道場(2022〜)</p>
