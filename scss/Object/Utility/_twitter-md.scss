@@ -1,0 +1,8 @@
+@use "../../Foundation/variable" as *;
+
+#u-twitter-md{
+    @include breakpoint(pc){
+        height: 39px;
+        margin-top: 5px;    
+    }
+}

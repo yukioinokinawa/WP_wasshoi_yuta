@@ -1020,4 +1020,11 @@ p {
 .grecaptcha-badge {
   visibility: hidden;
 }
+
+@media (min-width: 1025px) {
+  #u-twitter-md {
+    height: 39px;
+    margin-top: 5px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
