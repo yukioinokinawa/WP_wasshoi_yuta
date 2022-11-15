@@ -13,21 +13,6 @@
 
         )); ?>
     </section>
-                )); ?>
-            </section>
-            
-            <ul class="p-card">
-                <div class="c-grid">
-                    <?php 
-                        if( have_posts()):
-                            while( have_posts()):
-                                the_post(); ?>
-                            <li>
-                                <article>
-                                    <?php the_content(); ?>
-                                    <a href="<?php the_permalink(); ?>" class="c-button--go-single c-shadow">詳細ページへ</a>
-                                </article>
-                            </li>
 
     <ul class="p-card">
         <div class="c-grid">
@@ -38,6 +23,7 @@
                     <li>
                         <article>
                             <?php the_post_thumbnail(); ?>
+                            <?php the_title(); ?>
                             <?php the_excerpt(); ?>
                             <a href="<?php the_permalink(); ?>" class="c-button--go-single c-shadow">詳細ページへ</a>
                         </article>
@@ -45,7 +31,7 @@
 
                 <?php endwhile; ?>
             <?php else : ?>
-                <p>表示する投稿がありません</p>
+                <p>ただいま準備中です</p>
             <?php endif; ?>
 
         </div>
