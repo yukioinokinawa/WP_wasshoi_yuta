@@ -516,14 +516,13 @@ p {
 }
 
 .c-container {
-  width: 100vw;
+  width: 100dvw;
   height: 100%;
   overflow-x: hidden;
   position: relative;
 }
 @media (min-width: 1025px) {
   .c-container {
-    width: calc(100vw - 17px);
     position: relative;
   }
 }
