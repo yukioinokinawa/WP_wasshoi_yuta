@@ -1,13 +1,12 @@
 @use "../../Foundation/variable" as *;
 
 .c-container {
-    width: 100vw;
+    width: 100dvw;
     height: 100%;
     overflow-x: hidden;
     position: relative;
 
     @include breakpoint(pc) {
-        width: calc(100vw - 17px);
         position: relative;
     }
 }
