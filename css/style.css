@@ -713,7 +713,6 @@ p {
 
 .p-career {
   padding-top: 115px;
-  text-align: center;
   margin: 0 43px;
 }
 .p-career h2 {
@@ -732,6 +731,16 @@ p {
   .p-career span {
     font-size: 32px;
     font-weight: bold;
+  }
+}
+@media (min-width: 600px) {
+  .p-career {
+    text-align: center;
+  }
+}
+@media (min-width: 1025px) {
+  .p-career {
+    text-align: center;
   }
 }
 

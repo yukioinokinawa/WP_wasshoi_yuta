@@ -1,26 +1,37 @@
 @use "../../Foundation/variable" as *;
 
-.p-career{
+.p-career {
     padding-top: 115px;
-    text-align: center;
     margin: 0 43px;
-    
-    h2{
+
+    h2 {
         margin-bottom: 32px;
     }
-    h3{
+
+    h3 {
         font-size: 20px;
     }
-    ul{
+
+    ul {
         margin-bottom: 56px;
     }
-    li{
+
+    li {
         margin-bottom: 1.75rem;
     }
-    span{
-        @include breakpoint(pc){
+
+    span {
+        @include breakpoint(pc) {
             font-size: 32px;
             font-weight: bold;
         }
+    }
+
+    @include breakpoint(tablet) {
+        text-align: center;
+    }
+
+    @include breakpoint(pc) {
+        text-align: center;
     }
 }
