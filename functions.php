@@ -51,7 +51,7 @@ function my_meta_ogp()
         /*初期設定*/
 
         // 画像 （アイキャッチ画像が無い時に使用する代替画像URL）
-        $ogp_image = './imgs/top-page-img.jpg';
+        $ogp_image = 'https://www.wasshoiyuta.com/wp-content/uploads/2022/10/top-page-img.jpg';
         // Twitterのアカウント名 (@xxx)
         $twitter_site = '@WasshoiYuta';
         // Twitterカードの種類（summary_large_image または summary を指定）
