@@ -63,7 +63,7 @@ Template Name: contact（カスタムテンプレートの名前）
             <div class="c-panel--mini__memo">
                 <p>お仕事のご依頼は随時受け付けております<br>
                     決まっている範囲で結構ですのでメールにてお気軽にご連絡ください<br>
-                    わっしょいゆ〜たより直接ご返信します。</p>
+                    わっしょいゆ〜たより直接ご返信します</p>
             </div>
         </section>
         <section class="c-contact-form">
