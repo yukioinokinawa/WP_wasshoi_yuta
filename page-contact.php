@@ -56,14 +56,13 @@ Template Name: contact（カスタムテンプレートの名前）
     <article class="p-form">
         <section class="c-panel--main">
             <div class="c-panel--mini">
-                <p>お問合わせ<br>
-                    フォーム</p>
+                <p>お問合わせ</p>
             </div>
         </section>
         <section>
             <div class="c-panel--mini__memo">
-                <p>お仕事のご依頼はこちらのフォームより随時受け付けております<br>
-                    決まっている範囲で結構ですので詳細を下記のフォームよりご連絡ください<br>
+                <p>お仕事のご依頼は随時受け付けております<br>
+                    決まっている範囲で結構ですのでメールにてお気軽にご連絡ください<br>
                     わっしょいゆ〜たより直接ご返信します。</p>
             </div>
         </section>
