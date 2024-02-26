@@ -27,8 +27,10 @@ Template Name: contact（カスタムテンプレートの名前）
             <h2 class="c-title--number">1 お問合わせ</h2>
             <div>
                 <p>お仕事のご依頼は随時受け付けております<br>
-                    決まっている範囲で結構ですので詳細を下記のフォームよりご連絡ください<br>
-                    わっしょいゆ〜たより直接ご返信します</p>
+                    <strong>お名前・ご依頼予定日・ご依頼内容</strong>を<br>
+                    お書き添えのうえ、お気軽にご連絡ください<br>
+                    わっしょいゆ〜たより直接ご返信します
+                </p>
             </div>
             <div>
                 <p class="c-icon--arrow">▼</p>
@@ -62,8 +64,10 @@ Template Name: contact（カスタムテンプレートの名前）
         <section>
             <div class="c-panel--mini__memo">
                 <p>お仕事のご依頼は随時受け付けております<br>
-                    決まっている範囲で結構ですのでメールにてお気軽にご連絡ください<br>
-                    わっしょいゆ〜たより直接ご返信します</p>
+                    <strong>お名前・ご依頼予定日・ご依頼内容を</strong><br>
+                    お書き添えのうえ、お気軽にご連絡ください<br>
+                    わっしょいゆ〜たより直接ご返信します
+                </p>
             </div>
         </section>
         <section class="c-contact-form">
